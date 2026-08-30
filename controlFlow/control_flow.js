@@ -26,3 +26,25 @@ if (isLoggedIn) {
 } else {
     userMessage = "Please log in to access the system.";
 }
+
+console.log("User Message:", userMessage);
+
+/* define variable and switch statement for userType and userCategory */
+let userType = "Subscriber";
+let userCategory;
+
+switch (userType) {
+    case "admin":
+        userCategory = "Administrator";
+        break;
+    case "manager":
+        userCategory = "Manager";
+        break;
+    case "subscriber":
+        userCategory = "Subscriber";
+        break;
+    default:
+        userCategory = "Unknown";
+}
+
+console.log("User Category:", userCategory);
